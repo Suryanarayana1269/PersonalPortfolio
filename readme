@@ -1,0 +1,56 @@
+# Personal Portfolio Website
+
+This is a responsive personal portfolio website built with HTML, CSS, and JavaScript. It showcases my skills, experience, education, services, and projects as a Fullstack Developer.
+
+## Features
+
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
+- **Animated Particle Background:** Canvas-based animated background for a modern look.
+- **Navigation Menu:** Hamburger menu for mobile, smooth scrolling, and active link highlighting.
+- **About Section:** Tabbed interface for skills, experience, and education.
+- **Services Section:** Highlights key services offered.
+- **Portfolio Section:** Displays project thumbnails with overlay details and links.
+- **Contact Section:** Contact form integrated with Google Sheets, social links, and resume download.
+
+## Project Structure
+
+```
+index.html
+style.css
+images/
+    bu.png
+    l-s.png
+    myresume.pdf
+    phoneb.png
+    u.png
+    work-1.png
+    work-2.png
+    work-3.png
+```
+
+- [`index.html`](index.html): Main HTML file containing the structure and content.
+- [`style.css`](style.css): Stylesheet for layout, responsiveness, and visual effects.
+- `images/`: Folder containing images and resume PDF.
+
+## How to Use
+
+1. **Clone or Download the Repository**
+2. **Open `index.html` in your browser**  
+   No build step is required.
+
+## Customization
+
+- **Update Content:**  
+  Edit [`index.html`](index.html) to change your name, about info, services, projects, and contact details.
+- **Change Images:**  
+  Replace images in the `images/` folder as needed.
+- **Modify Styles:**  
+  Edit [`style.css`](style.css) to adjust colors, fonts, or layout.
+
+## Contact
+
+For any questions or feedback, feel free to reach out via the contact form on the website or email: `suryanarayanabodapati1269@gmail.com`.
+
+---
+
+© Suryanarayana Bodapati
