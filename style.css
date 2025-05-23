@@ -566,3 +566,121 @@ form .btn2{
     margin-top: -40px;
     display: block;
 }
+
+/* --- Advanced Styles Below --- */
+
+/* Subtle Section Fade-in Animation */
+section, .container, .row, .work, .services-list div {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s forwards;
+}
+section:nth-child(1), .container:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2), .container:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3), .container:nth-child(3) { animation-delay: 0.3s; }
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Glassmorphism Card Effect for Services & Portfolio */
+.services-list div, .work {
+    background: rgba(38,38,38,0.85);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Neon Glow on Hover for Buttons */
+.btn, .btn.btn2 {
+    box-shadow: 0 0 0 transparent;
+    transition: background 0.5s, box-shadow 0.4s;
+}
+.btn:hover, .btn.btn2:hover {
+    box-shadow: 0 0 16px 2px #ff004f, 0 0 32px 4px #ff004f33;
+}
+
+/* Animated Social Icons */
+.social-icons a {
+    position: relative;
+    overflow: hidden;
+}
+.social-icons a::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 0; height: 0;
+    background: rgba(255,0,79,0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    z-index: -1;
+}
+.social-icons a:hover::after {
+    width: 120%;
+    height: 120%;
+}
+
+/* Portfolio Image Zoom and Shadow */
+.work img {
+    box-shadow: 0 4px 24px rgba(255,0,79,0.08);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.work:hover img {
+    box-shadow: 0 8px 32px rgba(255,0,79,0.18);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #181818;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff004f;
+    border-radius: 4px;
+}
+
+/* Animated Underline for Tab Links */
+.tab-links::after {
+    background: linear-gradient(90deg, #ff004f 0%, #ef5488 100%);
+}
+
+/* Responsive Font Sizing */
+html {
+    font-size: 16px;
+}
+@media (max-width: 900px) {
+    html { font-size: 15px; }
+}
+@media (max-width: 600px) {
+    html { font-size: 14px; }
+}
+@media (max-width: 400px) {
+    html { font-size: 13px; }
+}
+
+/* Floating Contact Button (optional) */
+#contact-float-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: #ff004f;
+    color: #fff;
+    border-radius: 50%;
+    width: 56px; height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 24px #ff004f55;
+    cursor: pointer;
+    z-index: 2000;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+#contact-float-btn:hover {
+    background: #fff;
+    color: #ff004f;
+    box-shadow: 0 8px 32px #ff004f99;
+}
